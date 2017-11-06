@@ -80,7 +80,8 @@ class Category_Controller {
             'message' => pm_get_text('success_messages.category_updated')
         ];
 
-        return $this->get_response( $resource, $message );    }
+        return $this->get_response( $resource, $message );
+    }
 
     public function destroy( WP_REST_Request $request ) {
         $id = $request->get_param( 'id' );
